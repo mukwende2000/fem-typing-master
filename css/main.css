@@ -1,5 +1,3 @@
-@import url("./header.css");
-
 :root {
     --netral: hsl(0, 0%, 100%);
     --neutral-400: hsl(240, 1%, 59%);
@@ -10,7 +8,9 @@
     --blue-400: hsl(210, 100%, 65%);
     --red-500: hsl(354, 63%, 57%);
     --green-500: hsl(140, 63%, 57%);
-    --yellow-400: hsl(49, 85%, 70%)
+    --yellow-400: hsl(49, 85%, 70%);
+
+    --font-main: 'Sora', sans-serif;
 }
 
 *,
@@ -24,11 +24,85 @@
 body {
     background-color: var(--neutral-900);
     color: var(--netral);
+    font-family: var(--font-main);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
 }
 
 .wrapper {
     width: 100%;
-    max-width: 1440px;
+    max-width: 1280px;
     margin: 0 auto;
     padding-block: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px 1fr 50px;
+    row-gap: 32px;
+}
+
+.best-score {
+    text-align: right;
+}
+
+.game-stats,
+.game-settings {
+    display: flex;
+    gap: 20px;
+}
+
+.stat {
+    color: var(--neutral-400);
+    font-size: 1.2rem;
+
+    .WPM {
+        color: var(--netral);
+    }
+
+    .accuracy {
+        color: var(--red-500);
+    }
+
+    .time {
+        color: var(--yellow-400);
+    }
+}
+
+.WPM,
+.accuracy,
+.time {
+    font-weight: 900;
+}
+
+.game-settings button {
+    border-radius: 8px;
+    outline: 1px solid var(--neutral-800);
+    background-color: transparent;
+    color: var(--neutral);
+    padding: 6px;
+    margin-inline: 10px;
+}
+
+.game-settings button.active {
+    outline-color: var(--blue-600);
+    color: var(--blue-600);
+}
+
+
+.main-interface {
+    grid-column: 1 / span 2;
+    font-size: 2.5rem;
+    line-height: 1.3;
+    color: var(--neutral-400);
+}
+
+.restart-btn {
+    background-color: var(--neutral-800);
+    color: var(--netral);
+    border-radius: 10px;
+    outline: 1px solid red;
+    margin: 0 auto;
 }

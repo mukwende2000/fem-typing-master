@@ -4,27 +4,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
     <title>Typing Master</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">
+
+        <div class="logo">
+            <img src="./images/logo-large.svg" alt="logo - a cartoon keyboard">
+        </div>
+
+        <div class="best-score">
+            <img src="./images/icon-personal-best.svg" alt="icon image of a trophy">
+            <span>Personal best: <span>92 WPM</span></span>
+        </div>
+
+        <div class="game-stats">
+            <div class="stat">
+                WPM: <span class="WPM">40</span>
+            </div>
+
+            <div class="stat">
+                Accuracy: <span class="accuracy">94%</span>
+            </div>
+
+            <div class="stat">
+                Time: <span class="time">0:46</span>
+            </div>
+
+        </div>
+
+        <div class="game-settings">
+            <div class="difficulty">
+                <span>Difficulty:</span>
+                <button class="active">Easy</button>
+                <button>Medium</button>
+                <button>Hard</button>
+            </div>
             <div>
-                <img src="./images/logo-large.svg" alt="logo - a cartoon keyboard">
+                <span>Mode:</span>
+                <button class="active">Timed(60)</button>
+                <button>Passage</button>
             </div>
+        </div>
 
-            <div class="best-score">
-                <img src="./images/icon-personal-best.svg" alt="icon image of a trophy">
-                <span>Personal best: <span>92 WPM</span></span>
-            </div>
-        </header>
+        <div class="main-interface">
+            The archaeological expedition unearthed artifacts that complicated prevailing theories about Bronze Age
+            trade
+            networks. Obstidian from Anatolia, lapis lazuli from Afghanistan, and amber from the BAltic-all discoveredin
+            a
+            single Mycenaean tomb-suggested commercial connections far more extensive than previously hypothesized.
+            "We've
+            underestimated ancient people's navigational capabailities and their appetite for luxury goods," the lead
+            researcher observed. "Globalization isn't as modern as we assume."
+        </div>
 
-        <main>
-            <section></section>
-            <section></section>
-        </main>
+        <button class="restart-btn">Restart Test</button>
+
     </div>
 </body>
 
